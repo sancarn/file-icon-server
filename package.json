@@ -1,8 +1,8 @@
 {
-  "name": "get-icon",
+  "name": "file-icon-server",
   "version": "1.0.0",
   "description": "Get icon of file on windows or mac",
-  "main": "getIcon.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "node test/test.js"

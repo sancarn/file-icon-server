@@ -1,6 +1,6 @@
 
 import {platform} from "node:process";
-import iconServer from "../getIcon.js";
+import iconServer from "../index.js";
 
 //Some simple test suite.
 class Test {
