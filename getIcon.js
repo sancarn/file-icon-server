@@ -1,6 +1,6 @@
 import {platform} from 'node:process';
 import {PowerShell} from 'node-powershell';
-import {fileIconToBuffer} from 'file-icon'; //For Mac, uses Swift-lang
+import {fileIconToBuffer} from 'file-icon'; //TODO: Use jxa hosted in a pseudo-terminal instead?
 
 export class FileIconServer {
     constructor(){
@@ -15,6 +15,7 @@ export class FileIconServer {
         if(!this.host) this.start()
         switch(platform){
             case "darwin":
+                //TODO: Use jxa hosted in a pseudo-terminal instead?
                 return "data:image/png;base64," + await fileIconToBuffer(path).toString("base64")
             case "win32":
                 return (await this.host.invoke(`getIcon("${path}")`)).raw;
