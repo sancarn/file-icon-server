@@ -1,0 +1,16 @@
+{
+  "name": "get-icon",
+  "version": "1.0.0",
+  "description": "Get icon of file on windows or mac",
+  "main": "getIcon.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "file-icon": "^5.1.1",
+    "node-powershell": "^5.0.1"
+  }
+}
